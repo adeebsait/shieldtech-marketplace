@@ -1,0 +1,179 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="row align-items-center" style="background-color: #080e23; padding: 6.75em 3.75em;">
+    <div class="text-container col-md-6">
+        <h1 class="display-3" style="color: #e7f3fe; font-size: 3rem; margin-bottom: 1rem;">Welcome to ShieldTech Marketplace</h1>
+        <p class="fs-5" style="color: #b9babf; font-size: 1.25rem; margin-bottom: 2rem;">In today’s interconnected world, cybersecurity is not just a necessity; it’s a critical shield protecting your personal and professional life from digital threats. At ShieldTech Marketplace, we empower you with the tools and knowledge to safeguard your digital assets, ensuring peace of mind in the face of evolving cyber threats.</p>
+        <button type="button" class="btn btn-primary btn-lg" style="background-color: #2d5bff; font-size: 1.25rem; padding: 0.5rem 1rem;">Contact Us</button>
+    </div>
+    <div class="image-container col-md-6 d-flex justify-content-center align-items-center">
+        <img src="images/3dsecurity.jpg" alt="3dsecurity" class="rounded mx-auto d-block" style="max-width: 70%; max-height: 70%;" />
+    </div>
+</div>
+
+
+<div class="row d-flex" style="background-color:#f6fbff; padding:6.75em  3.75em;">
+    <div class="text-container col-md-6 d-flex justify-content-center align-items-center">
+        <h1 style="color: #0f121e; font-size:64px ">
+            <span style="color: #2d5bff;">Why</span> <br />
+            <span style="background-image: linear-gradient(to right, #2d5bff, #0f121e); -webkit-background-clip: text; color: transparent;">Shield</span>
+            <span style="background-image: linear-gradient(to right, #0f121e, #2d5bff); -webkit-background-clip: text; color: transparent;">Tech</span> ?
+        </h1>
+    </div>
+    <div class="col-md-6 " style="">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" style="">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne " style="width:100%">
+                        <strong>Trusted Expertise</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Curated by industry experts, our products are rigorously vetted for maximum security.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>Comprehensive Protection </strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        From antivirus software to secure routers, find all your cybersecurity needs in one place.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Empowering Knowledge</strong>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Beyond products, we offer courses and resources to bolster your defense against cyber threats.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="featured-articles" style="background-color:#f6fbff; padding:6.75em 3.75em;">
+        <h1 class="text-center" style="color: #0f121e; font-size: 34px;">
+            <span style="color: #2d5bff;">Featured</span>
+            <span style="background-image: linear-gradient(to right, #2d5bff, #0f121e); -webkit-background-clip: text; color: transparent;">Articles</span>
+        </h1>
+
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="card mySlides">
+                <div class="card-body " style="padding:10px 15px">
+                    <h3>Empower Your Team with Cybersecurity Training</h3>
+                    <p>Uncover the value of educating your team with InfoSec Academy’s courses. From basic cybersecurity awareness to advanced certification programs, equip your employees with the knowledge to recognize and mitigate digital threats.</p>
+                </div>
+            </div>
+            <div class="card mySlides">
+                <div class="card-body pd-3" style="padding:10px 15px">
+                    <h3>Why Every Home Needs a Secure Router</h3>
+                    <p>Explore how SafeNet Secure Router and GuardianNet Wi-Fi Access Point transform your home network into a fortress. Learn about the significance of encryption, firewalls, and secure Wi-Fi protocols in protecting your family’s online activities.</p>
+                </div>
+            </div>
+            <div class="card mySlides">
+                <div class="card-body  ">
+                    <h3>The Importance of Antivirus in Everyday Computing</h3>
+                    <p>Discover how DefendPro Antivirus shields your personal data from malware, ransomware, and phishing attacks, ensuring safe browsing and data integrity. With real-time protection and automatic updates, stay one step ahead of cybercriminals.</p>
+                </div>
+            </div>
+
+            <!-- Slideshow Controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="gram-service">
+    <div class="gram-page" style="display:flex; align-items:center; justify-content:space-between;padding:30px">
+        <div>
+            <h3>On the 'gram</h3>
+            <p>#HackYourWorld</p>
+        </div>
+        <div class="ig-handle">
+            <a href="#" style="text-decoration:none; background-image: linear-gradient(to right, #2d5bff, #0f121e); -webkit-background-clip: text; color: transparent;font-weight:bolder">ShieldTech</a>
+            <span class="material-symbols-outlined verify">
+                verified
+            </span>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* Style for Slideshow Container */
+    .slideshow-container {
+        position: relative;
+        max-width: 800px; /* Adjust the width as needed */
+        margin: 50px auto;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adding box shadow */
+    }
+
+    /* Hide slides by default */
+    .mySlides {
+        display: none;
+    }
+
+    .card-body h3{
+      font-size:20px;
+    }
+    .card-body p{
+        font-size:15.7px;
+        padding:10px 20px;
+    }
+    /* Style for Slideshow Controls */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16px;
+    
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 500px;
+        z-index: 1;
+        text-align:center;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+        /* Style for Slideshow Navigation Icons */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+</style>
+
+
+
+
